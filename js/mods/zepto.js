@@ -1,6 +1,5 @@
 /* Zepto v1.0-1-ga3cab6c - polyfill zepto detect event ajax form fx - zeptojs.com/license */
-
-
+define('zepto',function(require,exports,module){
 ;(function(undefined){
   if (String.prototype.trim === undefined) // fix for iOS 3.2
     String.prototype.trim = function(){ return this.replace(/^\s+|\s+$/g, '') }
@@ -1563,3 +1562,6 @@ window.Zepto = Zepto
 
   testEl = null
 })(Zepto)
+
+module.exports = Zepto;
+});
